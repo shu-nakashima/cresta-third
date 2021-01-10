@@ -1,0 +1,300 @@
+/**
+ * YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
+ * http://cssreset.com
+ * Copyright 2012 Yahoo! Inc. All rights reserved.
+ * http://yuilibrary.com/license/
+ */
+/*
+	TODO will need to remove settings on HTML since we can't namespace it.
+	TODO with the prefix, should I group by selector or property for weight savings?
+*/
+html {
+  color: #000;
+  background: #FFF;
+}
+
+/*
+	TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+	TODO test putting a class on HEAD.
+		- Fails on FF.
+*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+/*
+	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* to preserve line-height and selector appearance */
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*to enable resizing for IE*/
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+
+/*because legend doesn't inherit in IE */
+legend {
+  color: #000;
+}
+
+/* YUI CSS Detection Stamp */
+#yui3-css-stamp.cssreset {
+  display: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+img, svg {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Montserrat","Noto Sans JP",sans-serif;
+  color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1.4rem;
+  }
+}
+
+.flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-wrapper {
+  padding: 60px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .section-wrapper {
+    padding: 40px 0;
+  }
+}
+
+.section-wrapper:first-of-type {
+  padding-top: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .section-wrapper:first-of-type {
+    padding: 80px 0 4vh;
+  }
+}
+
+.section-wrapper:last-of-type {
+  padding-bottom: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .section-wrapper:last-of-type {
+    padding-bottom: 80px;
+  }
+}
+
+.content-wrapper {
+  max-width: 1100px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .content-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0 4vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content-wrapper.about-bg {
+    padding: 50px 4vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content-wrapper.relative {
+    padding-top: 120px;
+  }
+}
+
+.section__ttl {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.btn-link {
+  display: block;
+  width: 160px;
+  height: 36px;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 36px;
+  margin-top: 30px;
+}
+
+.gray-bg {
+  background-color: #f2f2f2;
+}
+
+.lines {
+  line-height: 2;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .ml-auto {
+    margin-left: 0;
+  }
+}
+
+.relative {
+  position: relative;
+  padding-top: 150px;
+}
+/*# sourceMappingURL=style_base.css.map */
