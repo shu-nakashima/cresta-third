@@ -194,7 +194,7 @@ body.noscroll {
 .kv-wrapper {
   height: 86.5%;
   width: 76.4%;
-  background-image: url(/img/kv-img.jpg);
+  background-image: url(https://shu-nakashima.github.io/cresta-third/img/kv-img.jpg);
   background-size: cover;
   background-position: center 0;
   position: relative;
@@ -254,7 +254,7 @@ body.noscroll {
 }
 
 .about-bg {
-  background-image: url(/img/about-img.jpg);
+  background-image: url(https://shu-nakashima.github.io/cresta-third/img/about-img.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
