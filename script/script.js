@@ -7,13 +7,13 @@ $(function(){
             $('.bar').toggleClass('cross');
             $('.header-nav').toggleClass('open');
             $('.burger-musk').fadeToggle(300);
-            ('body').toggleClass('noscroll');
+            $('body').toggleClass('noscroll');
         }else{
             $(this).toggleClass('black');
             $('.bar').toggleClass('cross');
             $('.header-nav').toggleClass('open');
             $('.burger-musk').fadeToggle(300);
-            ('body').toggleClass('noscroll');
+            $('body').toggleClass('noscroll');
         }
     });
 
