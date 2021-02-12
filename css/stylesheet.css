@@ -194,7 +194,7 @@ body.noscroll {
 .kv-wrapper {
   height: 86.5%;
   width: 76.4%;
-  background-image: url(https://shu-nakashima.github.io/cresta-third/img/kv-img.png);
+  background-image: url(/img/kv-img.png);
   background-size: cover;
   background-position: center 0;
   position: relative;
@@ -204,7 +204,7 @@ body.noscroll {
   .kv-wrapper {
     height: 86.5%;
     width: 76.4%;
-    background-image: url(https://shu-nakashima.github.io/cresta-third/img/kv-img@2x.png);
+    background-image: url(/img/kv-img@2x.png);
     background-size: cover;
     background-position: center 0;
     position: relative;
@@ -265,7 +265,7 @@ body.noscroll {
 }
 
 .about-bg {
-  background-image: url(https://shu-nakashima.github.io/cresta-third/img/about-img.png);
+  background-image: url(/img/about-img.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -274,7 +274,7 @@ body.noscroll {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   .about-bg {
-    background-image: url(https://shu-nakashima.github.io/cresta-third/img/about-img@2x.png);
+    background-image: url(/img/about-img@2x.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
