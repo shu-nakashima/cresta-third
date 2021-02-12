@@ -195,10 +195,21 @@ body.noscroll {
 .kv-wrapper {
   height: 86%;
   width: 76.4%;
-  background-image: url(https://shu-nakashima.github.io/cresta-third/img/heading-img_contact.jpg);
+  background-image: url(/img/heading-img_contact.png);
   background-size: cover;
   background-position: center 0;
   position: relative;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .kv-wrapper {
+    height: 86%;
+    width: 76.4%;
+    background-image: url(/img/heading-img_contact@2x.png);
+    background-size: cover;
+    background-position: center 0;
+    position: relative;
+  }
 }
 
 .page-ttl {
@@ -370,7 +381,7 @@ input, textarea {
 }
 
 .checkbox:checked {
-  background-image: url(https://shu-nakashima.github.io/cresta-third/img/icon_check.svg);
+  background-image: url(../img/icon_check.svg);
   background-size: 14px;
   background-repeat: no-repeat;
   background-position: center;

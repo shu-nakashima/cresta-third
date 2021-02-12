@@ -194,10 +194,21 @@ body.noscroll {
 .kv-wrapper {
   height: 86.5%;
   width: 76.4%;
-  background-image: url(https://shu-nakashima.github.io/cresta-third/img/kv-img.jpg);
+  background-image: url(/img/kv-img.png);
   background-size: cover;
   background-position: center 0;
   position: relative;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .kv-wrapper {
+    height: 86.5%;
+    width: 76.4%;
+    background-image: url(/img/kv-img@2x.png);
+    background-size: cover;
+    background-position: center 0;
+    position: relative;
+  }
 }
 
 .copy-wrapper {
@@ -254,11 +265,21 @@ body.noscroll {
 }
 
 .about-bg {
-  background-image: url(https://shu-nakashima.github.io/cresta-third/img/about-img.jpg);
+  background-image: url(/img/about-img.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 110px 0 110px 50px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .about-bg {
+    background-image: url(/img/about-img@2x.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 110px 0 110px 50px;
+  }
 }
 
 .about-content {
