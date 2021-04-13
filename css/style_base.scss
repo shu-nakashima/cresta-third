@@ -1,0 +1,112 @@
+@import "reset";
+@import "variables";
+@import "mixin";
+
+html {
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    &:hover{
+        opacity: 0.7;
+        transition: 0.3s;
+    }
+}
+img,svg{
+    width: 100%;
+    vertical-align: bottom;
+}
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "Montserrat","Noto Sans JP",sans-serif;
+    color: #333;
+    @include mq(){
+        font-size: 1.4rem;
+    }
+}
+.flex-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-wrapper{
+    padding: 60px 0;
+    @include mq(){
+        padding: 40px 0;
+    }
+    &:first-of-type{
+        padding-top: 120px;
+        @include mq(){
+        padding: 80px 0 4vh;
+        }
+    }
+    &:last-of-type{
+        padding-bottom: 120px;
+        @include mq(){
+        padding-bottom: 80px;
+        }
+    }
+}
+.content-wrapper{
+    max-width: 1100px;
+    padding: 0 30px;
+    margin: 0 auto;
+    @include mq(){
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding: 0 4vw;
+    }
+}
+.content-wrapper.about-bg{
+    @include mq(){
+        padding: 50px 4vw;
+    }
+}
+.content-wrapper.relative{
+    @include mq(){
+        padding-top: 120px;
+    }
+
+}
+.section__ttl{
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.btn-link{
+    display: block;
+    width: 160px;
+    height: 36px;
+    background-color: #000;
+    color:#fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 36px;
+    margin-top: 30px;
+}
+.gray-bg{
+    background-color: #f2f2f2;
+}
+.lines{
+    line-height: 2;
+}
+.ml-auto{
+    margin-left: auto;
+    @include mq(){
+        margin-left: 0;
+    }
+}
+.relative{
+    position: relative;
+    padding-top: 150px;
+}

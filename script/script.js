@@ -1,7 +1,9 @@
 $(function(){
+
+// ハンバーガーボタン
+
     var imgHeight = $('.kv-wrapper').outerHeight();//.kv-wrapperの画像の高さを取得
-    var bgHeight = $('.fv').outerHeight();//.fvの画像の高さを取得
-    
+
     $('.burger-btn').on('click',function(){
         if($(window).scrollTop() < imgHeight -50){
             $('.bar').toggleClass('cross');
@@ -17,6 +19,10 @@ $(function(){
         }
     });
 
+    
+// スクロールによるヘッダーの色変更
+
+    var bgHeight = $('.fv').outerHeight();//.fvの画像の高さを取得
     $(window).on('load scroll',function(){
         if($(window).scrollTop() < imgHeight -50){
             $('.logo').removeClass('black');
